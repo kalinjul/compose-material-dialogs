@@ -1,5 +1,9 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
+if (project.file("android-ci/gitlab-ci-library-semver/build_integrate_ci.gradle").exists()) {
+    apply(from = "android-ci/gitlab-ci-library-semver/build_integrate_ci.gradle")
+}
+
 plugins {
     id("com.diffplug.spotless") version "6.0.4"
     id("org.jetbrains.dokka") version "1.6.0"
@@ -14,7 +18,7 @@ buildscript {
 
     dependencies {
         classpath(Dependencies.Kotlin.gradlePlugin)
-        classpath("com.android.tools.build:gradle:7.2.0-alpha07")
+        classpath("com.android.tools.build:gradle:7.1.2")
         classpath("com.vanniktech:gradle-maven-publish-plugin:0.18.0")
         classpath("org.jetbrains.dokka:dokka-gradle-plugin:1.6.0")
         classpath(Dependencies.Shot.core)
