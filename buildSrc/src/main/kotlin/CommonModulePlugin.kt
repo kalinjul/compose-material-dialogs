@@ -14,7 +14,6 @@ class CommonModulePlugin: Plugin<Project> {
         plugins.run {
             apply("com.android.library")
             apply("kotlin-android")
-            apply("com.vanniktech.maven.publish")
             apply("shot")
             apply("org.jetbrains.dokka")
         }
