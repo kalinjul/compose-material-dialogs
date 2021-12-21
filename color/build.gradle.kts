@@ -55,6 +55,6 @@ shot {
     tolerance = 1.0 // Tolerance needed for CI
 }
 
-mavenPublish {
-    sonatypeHost = com.vanniktech.maven.publish.SonatypeHost.S01
-}
+//mavenPublish {
+//    sonatypeHost = com.vanniktech.maven.publish.SonatypeHost.S01
+//}
