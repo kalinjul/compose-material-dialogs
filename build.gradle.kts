@@ -1,15 +1,5 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile2
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile3
-apply(from = "android-ci/$YAML_NAME/build_integrate_ci.gradle")
 
-
-
-
-
-//if (project.file("android-ci/gitlab-ci-library-semver/build_integrate_ci.gradle").exists()) {
-//    apply(from = "android-ci/gitlab-ci-library-semver/build_integrate_ci.gradle")
-//}
 
 plugins {
     id("com.diffplug.spotless") version "6.0.4"
